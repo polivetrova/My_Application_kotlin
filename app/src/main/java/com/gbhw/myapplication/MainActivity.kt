@@ -21,8 +21,10 @@ class MainActivity : AppCompatActivity() {
 
             if (textView1.text.toString().toInt() == 1 || textView1.text.toString().toInt() == 2 || textView1.text.toString().toInt() == 3) {
                 textview4.text = doSomethingElse(textView1.text.toString().toInt())
-            } else {
+            } else if (textView1.text.toString().toInt() == 4) {
                 textview4.text = "no data"
+            } else {
+                textView1.text = "0"
             }
         }
 
